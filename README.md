@@ -34,3 +34,37 @@ Vercel: https://vercel.com/dashboard
 Supabase: https://supabase.com/dashboard
 
 Visila provisioned this. You own it entirely.
+
+## NEXT STEPS
+
+### Environment Setup
+
+1. Clone the repository from GitHub
+2. Install dependencies: `npm install`
+3. Copy the environment template: `cp .env.example .env`
+4. Fill in your Supabase credentials:
+   - `VITE_SUPABASE_URL`: Your Supabase project URL
+   - `VITE_SUPABASE_ANON_KEY`: Your Supabase anonymous key
+5. Start development server: `npm run dev`
+
+### Deployment Instructions
+
+1. Push code to the `main` branch on GitHub
+2. Vercel will automatically detect and deploy changes
+3. Configure environment variables in Vercel:
+   - Go to Vercel Dashboard → Settings → Environment Variables
+   - Add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`
+4. Verify deployment at your Vercel project URL
+
+### Development Roadmap
+
+- [ ] Implement core feature 1
+- [ ] Implement core feature 2
+- [ ] Add user authentication flows
+- [ ] Set up database schema in Supabase
+- [ ] Implement user profile management
+- [ ] Add data persistence and sync
+- [ ] Test responsive design across devices
+- [ ] Optimize performance and bundle size
+- [ ] Set up monitoring and error tracking
+- [ ] Prepare for production launch
